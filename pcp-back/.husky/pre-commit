@@ -1,0 +1,4 @@
+if ! output=$(npm test -- --bail --forceExit 2>&1); then
+  echo "$output"
+  exit 1
+fi
